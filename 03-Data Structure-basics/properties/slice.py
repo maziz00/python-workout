@@ -16,3 +16,8 @@ print(x*5)
 y = "Hi this is string"
 print(x.split())
 print(x.split('i')) # split on i letter
+
+
+
+s = 'hello'
+print(s[ ::-1])
