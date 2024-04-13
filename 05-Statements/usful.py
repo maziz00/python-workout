@@ -10,9 +10,9 @@ print(list(range(0,11,2)))
 
 index_count = 0
 
-for ltr in 'abcd':
-    print('At index {} the letter is {}'.format(index_count,ltr))
-    index_count += 1
+# for ltr in 'abcd':
+#     print('At index {} the letter is {}'.format(index_count,ltr))
+#     index_count += 1
 
 word = 'abcde'
 for letter in word:
@@ -47,6 +47,38 @@ print('a' in 'a world')
 
 print( 'k1' in {'k1': 445})
 d = {'k1': 445}
+# for k, v in d.items():
+#   print("Here 445 in dic results:")
+#   "445" in k
+#   "445" in v
 
-print(445 in d.keys)
-print(445 in d.values)
+
+mylist = [100, 200, 300, 400, 500]
+print(min(mylist))
+print(max(mylist))
+
+from random import shuffle
+
+m1list = [1,2,3,4,5,6,7,8,9,10]
+shuffle(m1list)
+print(m1list)
+
+random_list = shuffle(m1list)
+print(random_list) # shuffled dosn't return anything
+
+
+from random import randint
+
+print(randint(0,100))
+
+mynum = randint(1,20)
+print(mynum)
+
+result = input('What is your name? ') # input alwasy accepting input as string
+print(type(result), result)
+
+result = input('What is your Age? ')
+intg = int(result)
+print(type(intg), intg)
+fltd = float(result)
+print(type(fltd), fltd)
